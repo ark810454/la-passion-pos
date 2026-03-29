@@ -13,12 +13,19 @@ class SyncManager(context: Context) {
     companion object {
         private const val PREFS = "la_passion_sync"
         private const val KEY_SERVER_URL = "server_url"
+        private const val DEFAULT_SERVER_URL = "https://la-passion-pos.vercel.app"
     }
 
     private val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
 
     fun getServerUrl(): String {
-        return prefs.getString(KEY_SERVER_URL, "http://127.0.0.1:4100") ?: "http://127.0.0.1:4100"
+        val saved = prefs.getString(KEY_SERVER_URL, DEFAULT_SERVER_URL)?.trim().orEmpty()
+        return when {
+            saved.isBlank() -> DEFAULT_SERVER_URL
+            saved == "http://127.0.0.1:4100" -> DEFAULT_SERVER_URL
+            saved == "http://localhost:4100" -> DEFAULT_SERVER_URL
+            else -> saved
+        }
     }
 
     fun saveServerUrl(url: String) {
