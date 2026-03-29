@@ -1,1 +1,0 @@
-C:\Users\afric\OneDrive\Documents\POSTicket\app\src\main\cpp\CMakeLists.txt

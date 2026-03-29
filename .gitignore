@@ -10,6 +10,7 @@ local.properties
 .vercel/
 
 app/build/
+app/.cxx/
 server/data/*.local.json
 
 *.log

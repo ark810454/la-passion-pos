@@ -1,7 +1,0 @@
-[
-{
-  "directory": "C:/Users/afric/OneDrive/Documents/POSTicket/app/.cxx/Debug/5h2v5h6q/armeabi-v7a",
-  "command": "C:\\Users\\afric\\AppData\\Local\\Android\\Sdk\\ndk\\26.0.10792818\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=armv7-none-linux-androideabi24 --sysroot=C:/Users/afric/AppData/Local/Android/Sdk/ndk/26.0.10792818/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dposticket32stub_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -o CMakeFiles\\posticket32stub.dir\\posticket32stub.c.o -c C:\\Users\\afric\\OneDrive\\Documents\\POSTicket\\app\\src\\main\\cpp\\posticket32stub.c",
-  "file": "C:\\Users\\afric\\OneDrive\\Documents\\POSTicket\\app\\src\\main\\cpp\\posticket32stub.c"
-}
-]
