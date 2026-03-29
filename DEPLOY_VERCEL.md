@@ -36,14 +36,15 @@ Remplacer `server/data/db.json` par une vraie base distante, par exemple:
 ## Variables conseillees pour la prod
 
 - `DATABASE_URL`
+- `POSTGRES_URL` si l'integration Vercel/Neon l'ajoute automatiquement
 - `APP_ENV=production`
 - `ALLOW_FILE_DB_ON_VERCEL` uniquement pour des tests tres limites, pas pour la production
 
 ## Fonctionnement du stockage
 
-- `DATABASE_URL` definie: API dynamique avec Postgres
+- `DATABASE_URL` ou `POSTGRES_URL` definie: API dynamique avec Postgres
 - `DATABASE_URL` absente en local: fallback sur `server/data/db.json`
-- `DATABASE_URL` absente sur Vercel: lecture possible, ecritures bloquees avec message explicite
+- aucune URL Postgres sur Vercel: lecture possible, ecritures bloquees avec message explicite
 
 ## Schema SQL
 
