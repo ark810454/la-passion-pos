@@ -1,0 +1,3 @@
+C:/Users/afric/OneDrive/Documents/POSTicket/app/.cxx/Debug/5h2v5h6q/armeabi-v7a/CMakeFiles/posticket32stub.dir
+C:/Users/afric/OneDrive/Documents/POSTicket/app/.cxx/Debug/5h2v5h6q/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/afric/OneDrive/Documents/POSTicket/app/.cxx/Debug/5h2v5h6q/armeabi-v7a/CMakeFiles/rebuild_cache.dir

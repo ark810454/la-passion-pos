@@ -1,0 +1,17 @@
+.gradle/
+build/
+temp/
+
+.idea/
+*.iml
+
+local.properties
+.env
+.vercel/
+
+app/build/
+server/data/*.local.json
+
+*.log
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Passion Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <h1>La Passion</h1>
+        <p>Dashboard administrateur PC</p>
+        <button id="refreshBtn">Actualiser</button>
+        <button id="openKitchenBtn">Ecran cuisine</button>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <h2>Administration centrale</h2>
+            <p>Produits, tables, statistiques et commandes synchronisees.</p>
+          </div>
+          <div id="statusBadge" class="badge">Connecte</div>
+        </section>
+
+        <section class="cards" id="statsCards"></section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h3>Parametres</h3>
+            <button id="saveSettingsBtn">Enregistrer</button>
+          </div>
+          <div class="grid two">
+            <label>
+              <span>Nom etablissement</span>
+              <input id="establishmentName" type="text" />
+            </label>
+            <label>
+              <span>Adresse</span>
+              <input id="establishmentAddress" type="text" />
+            </label>
+          </div>
+          <div class="grid two" style="margin-top:12px">
+            <label>
+              <span>Happy hour terrasse (%)</span>
+              <input id="happyHourPercent" type="number" min="0" />
+            </label>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h3>Produits</h3>
+            <button id="saveProductsBtn">Sauvegarder produits</button>
+          </div>
+          <div class="toolbar">
+            <input id="newProductName" type="text" placeholder="Nom produit" />
+            <input id="newProductPrice" type="number" placeholder="Prix" />
+            <select id="newProductCategory">
+              <option value="drink">Boisson</option>
+              <option value="food">Plat</option>
+              <option value="mixed">Mixte</option>
+            </select>
+            <button id="addProductBtn">Ajouter</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Categorie</th>
+                <th>Actif</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="productsTable"></tbody>
+          </table>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h3>Tables</h3>
+            <button id="saveTablesBtn">Sauvegarder tables</button>
+          </div>
+          <div class="table-grid" id="tablesGrid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h3>Dernieres commandes</h3>
+          </div>
+          <div id="ordersList" class="orders"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

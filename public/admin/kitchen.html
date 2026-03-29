@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Passion Cuisine</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <h1>La Passion</h1>
+        <p>Ecran cuisine PC</p>
+        <button id="refreshKitchenBtn">Actualiser</button>
+      </aside>
+      <main class="content">
+        <section class="hero">
+          <div>
+            <h2>Suivi cuisine</h2>
+            <p>Commandes restaurant en attente, en preparation et prêtes.</p>
+          </div>
+          <div id="kitchenStatusBadge" class="badge">Cuisine connectee</div>
+        </section>
+        <section class="cards" id="kitchenStatsCards"></section>
+        <section class="panel">
+          <div class="panel-head">
+            <h3>Commandes cuisine</h3>
+          </div>
+          <div id="kitchenOrders" class="orders"></div>
+        </section>
+      </main>
+    </div>
+    <script src="./kitchen.js"></script>
+  </body>
+</html>
